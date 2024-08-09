@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+// declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,17 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'autenticacion';
+export class AppComponent implements OnInit {
+
+
+  ngOnInit(): void {
+
+    // $(document).ready(function() {
+    //   alert('we call alert from JQuery');
+    // });
+
+  }
+
+
+
 }
